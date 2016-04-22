@@ -13,4 +13,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:hint="@string/hint.main.name"
+        android:inputType="textCapCharacters"
+        android:padding="12dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/pass_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_edit_text"
+        android:text="@string/text.main.button.pass.info" />
+
 </RelativeLayout>
