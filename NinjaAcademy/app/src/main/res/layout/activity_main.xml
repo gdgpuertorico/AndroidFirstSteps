@@ -1,44 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jsosa.ninjaacademy.MainActivity">
 
-    <EditText
-        android:id="@+id/name_edit_text"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/names_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@color/colorPrimary"
-        android:hint="@string/hint.main.name"
-        android:inputType="textCapCharacters"
-        android:padding="16dp"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray" />
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_view" />
 
-    <EditText
-        android:id="@+id/city_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/name_edit_text"
-        android:layout_centerInParent="true"
-        android:background="@color/colorPrimary"
-        android:hint="@string/hint.main.city"
-        android:inputType="textCapCharacters"
-        android:padding="16dp"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray" />
-
-    <Button
-        android:id="@+id/pass_info_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/city_edit_text"
-        android:text="@string/text.main.button.pass.info" />
-
-</RelativeLayout>
+</FrameLayout>
