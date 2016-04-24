@@ -3,4 +3,5 @@
     <string name="content.desc.main.name.field">The input name input field</string>
     <string name="hint.main.name">Name</string>
     <string name="text.main.button.pass.info">Open new activity</string>
+    <string name="hint.main.city">City</string>
 </resources>
